@@ -51,6 +51,25 @@ viewButton.forEach((button) => {
       grid.classList.add("grid-view");
 
       grid.firstElementChild.classList.add("first");
+
+      const gridImages = grid.querySelectorAll(".grid-view-image");
+
+      gridImages.forEach((image) => {
+        image.addEventListener("click", () => {
+          const myParent = image.parentElement;
+          const biggerImageHolder =
+            image.closest(".grid-view").firstElementChild;
+          const biggerImage = biggerImageHolder.firstElementChild;
+
+          myParent.removeChild(myParent.firstElementChild);
+          myParent.appendChild(biggerImage);
+
+          console.log(typeof image);
+
+          //   biggerImageHolder.removeChild(biggerImageHolder.firstElementChild);
+          biggerImageHolder.appendChild(image);
+        });
+      });
     } else {
       singleViewImage.classList.remove("hidden");
       colorBar.classList.remove("hidden");
