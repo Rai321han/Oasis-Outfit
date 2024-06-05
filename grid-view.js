@@ -64,8 +64,6 @@ viewButton.forEach((button) => {
           myParent.removeChild(myParent.firstElementChild);
           myParent.appendChild(biggerImage);
 
-          console.log(typeof image);
-
           //   biggerImageHolder.removeChild(biggerImageHolder.firstElementChild);
           biggerImageHolder.appendChild(image);
         });

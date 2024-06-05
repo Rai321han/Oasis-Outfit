@@ -9,6 +9,11 @@
       src="https://kit.fontawesome.com/aaf9ae342b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="product_by_color.js" defer></script>
+    <script src="single-product-grid.js" defer></script>
+    <link rel="stylesheet" href="single-product.css" />
+    <link rel="stylesheet" href="single-product-grid.css" />
+    <script src="product-quantity-price.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -19,8 +24,94 @@
     </header>
 
     <!-- ------------------------------------------------ -->
-    <div class="product-head">
-      <div class="product-heading">Boxy Fit Washed T-Shirt</div>
+    <div class="single-product">
+      <div class="section-card-item big-card">
+        <div class="single-product-grid-view">
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_brown.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_black.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_white.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_white.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_white.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="grid-view-image"
+              src="assets/images/prdt_1234_white.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="zoomed-product">
+          <img
+            class="grid-view-image"
+            src="assets/images/prdt_1234_offwhite.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="single-product-information">
+        <div class="single-product-title">Boxy Washed T-Shirt</div>
+        <div class="single-product-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          asperiores ducimus exercitationem, consequatur nisi dolore maxime
+          minima? Cumque atque esse ut dignissimos sint corporis, nihil quis
+          beatae magni eligendi sed!
+        </div>
+        <div class="single-product-pricing">
+          <div>TK <span class="">3200</span></div>
+        </div>
+        <div class="single-product-button-group">
+          <div class="action">
+            <div class="quantityOne">
+              <div class="spinNumber">
+                <div class="incrimentButton">+</div>
+                <input
+                  class="spinNumberOutput"
+                  type="text"
+                  readonly
+                  value="0"
+                />
+                <div class="decrimentButton">-</div>
+              </div>
+
+              <div class="regularPrice">3200</div>
+              <div class="quantityOutput">0</div>
+            </div>
+          </div>
+          <button class="action single-product-btn add">ADD TO CART</button>
+          <button class="action single-product-btn buy">BUY NOW</button>
+        </div>
+      </div>
     </div>
     <section class="product-container"></section>
 

@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.big-card {
+  height: 70vh;
+}
+
+.single-product {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 2em;
+  background-color: var(--color-secondary);
+  padding: 2em;
+}
+
+.single-product-image-section {
+  justify-self: center;
+}
+
+.single-product-information {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.single-product-title {
+  font-size: 2rem;
+}
+
+.single-product-description {
+  font-size: 1.2rem;
+  color: grey;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.single-product-pricing {
+  font-size: 2rem;
+  color: var(--color-brand);
+}
+
+.single-product-button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: stretch;
+}
+
+.action {
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.single-product-btn {
+  padding: 0.6em 1em;
+
+  color: white;
+  font-size: 1rem;
+  border-style: none;
+}
+
+.action > form {
+  height: 100%;
+}
+
+.add {
+  background-color: black;
+}
+
+.buy {
+  background-color: var(--color-brand);
+}
+
+.product-quantity {
+  text-align: center;
+  max-width: 100px;
+  padding: 1em;
+  font-size: 1.2 rem;
+  border-style: none;
+}
+
+.quantityOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+/* .quantityOutput {
+  font-size: 52px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  width: 30%;
+  text-align: right;
+  margin-left: 50px;
+} */
+.spinNumber {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.spinNumber .incrimentButton,
+.spinNumber .decrimentButton {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #c6f5f56b;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 15px;
+  line-height: 50px;
+  background: #c6f5f53b;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.spinNumber .incrimentButton:hover,
+.spinNumber .decrimentButton:hover {
+  background: #00a1a1;
+}
+.spinNumber input {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #c6f5f56b;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 48px;
+  background: #c6f5f53b;
+}
+input:focus {
+  outline: none;
+}
+.regularPrice {
+  display: none;
+}
