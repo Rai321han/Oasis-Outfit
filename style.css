@@ -510,3 +510,9 @@ html {
     padding: 2em;
   }
 }
+
+@media (max-width: 450px) {
+  .nav-item p {
+    font-size: 0.7rem;
+  }
+}

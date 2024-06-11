@@ -47,7 +47,7 @@
 
 .single-product-button-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1em;
   align-items: stretch;
 }
@@ -58,11 +58,12 @@
 }
 
 .single-product-btn {
-  padding: 0.6em 1em;
+  padding: 1em 1em;
 
   color: white;
   font-size: 1rem;
   border-style: none;
+  margin-right: 10px;
 }
 
 .action > form {
@@ -87,7 +88,7 @@
 
 .quantityOne {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 
   box-sizing: border-box;
@@ -101,36 +102,44 @@
   text-align: right;
   margin-left: 50px;
 } */
+
+.quantityOutput,
+.text {
+  font-size: 2rem;
+  margin: 6px;
+  color: var(--color-brand);
+}
+
 .spinNumber {
   display: flex;
   justify-content: center;
-  width: 70%;
+  align-items: stretch;
+  margin-right: 20px;
+  /* width: 70%; */
 }
 .spinNumber .incrimentButton,
 .spinNumber .decrimentButton {
   width: 50px;
   height: 50px;
-  background: transparent;
   border: 1px solid #c6f5f56b;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  margin: 0 15px;
+  /* margin: 0 15px; */
   line-height: 50px;
-  background: #c6f5f53b;
   cursor: pointer;
   transition: 0.4s all ease-in-out;
+  background-color: black;
 }
 .spinNumber .incrimentButton:hover,
 .spinNumber .decrimentButton:hover {
-  background: #00a1a1;
+  background: var(--color-brand);
 }
 .spinNumber input {
   width: 48px;
-  height: 48px;
-  background: transparent;
+  /* height: 48px; */
   border: 1px solid #c6f5f56b;
   text-align: center;
   font-size: 24px;
@@ -138,11 +147,19 @@
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   line-height: 48px;
-  background: #c6f5f53b;
+  background-color: var(--color-brand);
 }
 input:focus {
   outline: none;
 }
 .regularPrice {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .purchase-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
