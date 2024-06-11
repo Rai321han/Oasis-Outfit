@@ -61,6 +61,10 @@
   object-position: center;
 }
 
+.grid-view-image {
+  min-width: 100px;
+}
+
 @media (max-width: 1000px) {
   .single-product-grid-view {
     grid-template-columns: 1fr;
@@ -70,5 +74,38 @@
 @media (max-width: 950px) {
   .single-product {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 610px) {
+  .section-card-item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .single-product-grid-view {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .big-card {
+    max-width: none;
+  }
+
+  .single-product-grid-view::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .zoomed-product {
+    height: 80%;
+  }
+
+  .section-card-item {
+    overflow: hidden;
   }
 }
